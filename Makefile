@@ -94,3 +94,6 @@ connectDebug:
 	# logs will be in /app/pdf-converter/output/ (log.out and maybe log.err)
 	# Also look in /tmp/pdf-converter/en-xxxx/make_pdf/en.log and en.tex
 	docker exec -it `docker inspect --format="{{.Id}}" pdf-converter` bash
+
+unitTestCoverage:
+    echo "No tests yet"
