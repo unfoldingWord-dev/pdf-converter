@@ -1,0 +1,16 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: ta_pdf_converter.py",
+      "type": "python",
+      "request": "launch",
+      "program": "ta_pdf_converter.py",
+      "args": ["-r", "--master"],
+      "console": "integratedTerminal"
+    }
+  ]
+}
