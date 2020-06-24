@@ -19,7 +19,9 @@ jobs:
 
       - name: SET DOCKER_TAG from GITHUB_REF
         shell: bash
-        run: DOCKER_TAG=`echo ${GITHUB_REF} | cut -d "/" -f3-`
+        run: |
+          REF=`echo ${GITHUB_REF} | cut -d "/" -f3-`
+          echo "::set-env name=DOCKER_TAG::${REF}"
 
       - name: Debug
         shell: bash
